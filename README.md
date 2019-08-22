@@ -6,7 +6,7 @@ UFileSensor
 
 
 example:
-
+```
 from airflow.sensors import UFileSensor
 t=UFileSensor(
     task_id='t',
@@ -15,8 +15,8 @@ t=UFileSensor(
     poke_interval=60,
     dag=dag
 )
-
-
+```
+```
 from airflow.operators import ImpalaOperator
 t = ImpalaOperator(
     task_id='t',
@@ -25,3 +25,4 @@ t = ImpalaOperator(
     priority_weight=50,
     dag=dag
 )
+```
